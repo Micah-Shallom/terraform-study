@@ -1,7 +1,7 @@
 provider "aws" {}
 
 variable "cidr_blocks" {
-    description = "cidr blocks and name tags for vpc and subnets"
+    description = "cidr blocks and name tags for vpc and subnet"
     # type = list(string)
     type = list(object({
         cidr_block = string,
